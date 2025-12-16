@@ -1,0 +1,483 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('Futura Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+body {
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    background-color: #0A192F;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CABECERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.logo-text {
+    height: 50px;
+    font-style: italic;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-nav {
+    background: transparent;
+    color: #FFA208;
+    border: 2px solid #FFA208;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: rgba(255, 162, 8, 0.1);
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-burger {
+    height: 200px;
+    width: auto;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-end;
+}
+
+.btn-registro {
+    background: transparent;
+    color: #FFA208;
+    border: 2px solid #FFA208;
+    padding: 0.8rem 3rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.btn-registro:hover {
+    background: rgba(255, 162, 8, 0.1);
+}
+
+.btn-iniciar {
+    background: #FFA208;
+    color: #0A192F;
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.btn-iniciar:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+/* PARA ORGANIZARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+.organizer-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.organizer-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.btn-crear {
+    background: #FFA208;
+    color: #0A192F;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-crear:hover {
+    background: #ff8800;
+}
+
+/* SEARCH SECTION */
+.search-section {
+    margin-bottom: 3rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    max-width: 100%;
+}
+
+.icon-location {
+    font-size: 1.5rem;
+    color: #FFA208;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #0A192F;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.icon-filter {
+    font-size: 1.2rem;
+    color: #FFA208;
+    cursor: pointer;
+}
+
+/* EVENTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS  */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #d3d3d3 0%, #e0e0e0 100%);
+}
+
+.event-content {
+    padding: 1.5rem;
+    color: #0A192F;
+}
+
+.titulo-evento {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #000;
+}
+
+.descripcion-evento {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.VALORACION {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-event {
+    background: #FFA208;
+    color: #0A192F;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-event:hover {
+    background: #ff8800;
+}
+
+
+/* ========== LOGIN PAGE STYLES ========== */
+
+.login-body {
+    background-color: #0A192F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP SECTION */
+.login-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 4rem;
+}
+
+.login-buttons-group {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.login-top-btn {
+    background: #FFA208;
+    color: #fff;
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    min-width: 180px;
+    text-align: center;
+}
+
+.login-top-btn:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+.login-register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.login-no-account {
+    color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.login-user-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-user-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-arrow-btn {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.login-arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* CONTENT SECTION */
+.login-content {
+    display: flex;
+    flex: 1;
+}
+
+.login-logo-section {
+    width: 39%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.login-logo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.login-form-section {
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 8rem;
+}
+
+.login-title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.login-label {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.login-input {
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    color: #333;
+    font-weight: normal;
+}
+
+.login-input::placeholder {
+    color: #999;
+}
+
+.login-input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 162, 8, 0.3);
+}
+
+.login-submit {
+    background: #FFA208;
+    color: #0A192F;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.login-submit:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+.login-forgot {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.login-forgot:hover {
+    color: #FFA208;
+}
+
+/* ========== CHECKBOX STYLES FOR REGISTER ========== */
+
+.login-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.login-checkbox {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid #FFA208;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    accent-color: #FFA208;
+}
+
+.login-checkbox-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.login-checkbox-label {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.login-checkbox-description {
+    color: #ccc;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+

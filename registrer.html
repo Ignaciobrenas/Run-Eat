@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run and Eat - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+    <div class="login-top">
+        <div class="login-buttons-group">
+            <button class="login-top-btn">INICIO</button>
+            <button class="login-top-btn">EVENTOS</button>
+            <div class="login-register-container">
+                <button class="login-top-btn">INICIAR SESIÓN</button>
+                <span class="login-no-account">¿Ya tienes cuenta?</span>
+            </div>
+        </div>
+        
+        <div class="login-user-section">
+            <img src="img/user.png" alt="User" class="login-user-img">
+            <div class="login-arrow-btn">↗</div>
+        </div>
+    </div>
+
+    <div class="login-content">
+        <div class="login-logo-section">
+            <img src="img/logo.png" alt="Run and Eat Logo" class="login-logo">
+        </div>
+
+        <div class="login-form-section">
+            <h2 class="login-title">REGISTRO</h2>
+
+            <form class="login-form">
+                <div class="login-field">
+                    <label class="login-label">Nombre Completo</label>
+                    <input type="text" class="login-input" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="login-field">
+                    <label class="login-label">Fecha de Nacimiento (xx/xx/xxxx)</label>
+                    <input type="text" class="login-input" placeholder="xx/xx/xxxx" required>
+                </div>
+
+                <div class="login-field">
+                    <label class="login-label">Dirección</label>
+                    <input type="text" class="login-input" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="login-field">
+                    <label class="login-label">Correo electrónico</label>
+                    <input type="email" class="login-input" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="login-field">
+                    <label class="login-label">Contraseña</label>
+                    <input type="password" class="login-input" placeholder="Contraseña" required>
+                </div>
+
+                <div class="login-checkbox-container">
+                    <input type="checkbox" class="login-checkbox" id="terms" required>
+                    <div class="login-checkbox-text">
+                        <label for="terms" class="login-checkbox-label">Terminos y condiciones</label>
+                        <span class="login-checkbox-description">Description</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
