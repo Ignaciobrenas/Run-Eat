@@ -1,4 +1,4 @@
-# Run and Eat 🍔🏃
+# Run and Eat
 
 A specialized platform for discovering and sharing gastronomic events worldwide.
 
