@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run and Eat - Creación de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="crear-header-top">
+        
+        <div class="crear-header-left">
+            <img src="img/logo.png" alt="Run and Eat Logo" class="crear-logo">
+            
+            <div class="crear-header-buttons">
+                <button class="crear-btn-header">INICIO</button>
+                <button class="crear-btn-header">EVENTOS</button>
+            </div>
+        </div>
+
+        <div class="crear-header-right">
+            <img src="img/user.png" alt="User" class="crear-user-icon">
+            <div class="crear-arrow-btn">↗</div>
+        </div>
+    </header>
+
+    <main class="crear-main-content">
+        <h1 class="crear-page-title">CREACIÓN DE EVENTOS</h1>
+
+        <div class="crear-content-grid">
+            <div class="crear-photo-section">
+                <div class="crear-photo-placeholder">
+                    <h3>FOTO</h3>
+                    <h3>EJEMPLO</h3>
+                    <h3>EVENTO</h3>
+                </div>
+            </div>
+            <form class="crear-form-section">
+                <div class="crear-form-field">
+                    <label class="crear-form-label">Nombre del Evento</label>
+                    <input type="text" class="crear-form-input" placeholder="Nombre del evento" required>
+                </div>
+
+                <div class="crear-form-field">
+                    <label class="crear-form-label">Organizador</label>
+                    <input type="text" class="crear-form-input" placeholder="Nombre del organizador" required>
+                </div>
+
+                <div class="crear-form-field">
+                    <label class="crear-form-label">Fecha del evento</label>
+                    <input type="date" class="crear-form-input" required>
+                </div>
+
+                <div class="crear-form-field">
+                    <label class="crear-form-label">Descripción del evento</label>
+                    <textarea class="crear-form-input crear-form-textarea" placeholder="Describe tu evento..." required></textarea>
+                </div>
+
+                <div class="crear-checkbox-container">
+                    <input type="checkbox" class="crear-form-checkbox" id="terms" required>
+                    <div class="crear-checkbox-text">
+                        <label for="terms" class="crear-checkbox-label">Acepto términos y condiciones</label>
+                        <a href="#" class="crear-checkbox-link">Leer términos y condiciones</a>
+                    </div>
+                </div>
+
+                <button type="submit" class="crear-btn-submit">Registrarte</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

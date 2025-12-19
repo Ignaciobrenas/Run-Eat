@@ -442,7 +442,7 @@ header {
     color: #FFA208;
 }
 
-/* ========== CHECKBOX STYLES FOR REGISTER ========== */
+/* ==========REGISTRO ========== */
 
 .login-checkbox-container {
     display: flex;
@@ -481,3 +481,303 @@ header {
 }
 
 
+/* ========== CREAR EVENTOS  ========== */
+
+/* HEADER */
+.crear-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.crear-header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.crear-logo {
+    width: 150px;
+    height: auto;
+}
+
+.crear-header-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.crear-btn-header {
+    background: #FFA208;
+    color: #fff;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.crear-btn-header:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+.crear-header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.crear-user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.crear-arrow-btn {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.crear-arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* MAIN CONTENT */
+.crear-main-content {
+    padding: 2rem 3rem;
+}
+
+.crear-page-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.crear-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    max-width: 1400px;
+}
+
+/* PHOTO UPLOAD SECTION */
+.crear-photo-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.crear-photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #0A192F;
+    width: 100%;
+    height: 100%;
+}
+
+.crear-photo-placeholder h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.crear-photo-placeholder p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.crear-photo-preview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.crear-photo-preview.active {
+    display: block;
+}
+
+.crear-btn-upload {
+    background: #FFA208;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.crear-btn-upload:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+.crear-file-input {
+    display: none;
+}
+
+.crear-change-photo-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: rgba(255, 162, 8, 0.9);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.crear-change-photo-btn.active {
+    display: block;
+}
+
+.crear-change-photo-btn:hover {
+    background: #ff8800;
+}
+
+/* FORM SECTION */
+.crear-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.crear-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.crear-form-label {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+
+.crear-form-input {
+    padding: 1.1rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    color: #333;
+    font-weight: normal;
+    font-family: Futura, sans-serif;
+}
+
+.crear-form-input::placeholder {
+    color: #999;
+}
+
+.crear-form-input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 162, 8, 0.3);
+}
+
+.crear-form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: Arial, sans-serif;
+}
+
+/* CHECKBOX */
+.crear-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.crear-form-checkbox {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid #FFA208;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: #FFA208;
+    margin-top: 2px;
+}
+
+.crear-checkbox-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.crear-checkbox-label {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.crear-checkbox-link {
+    color: #FFA208;
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.crear-checkbox-link:hover {
+    color: #ff8800;
+}
+
+
+.crear-btn-submit {
+    background: #FFA208;
+    color: #0A192F;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.crear-btn-submit:hover {
+    background: #ff8800;
+    transform: translateY(-2px);
+}
+
+.crear-btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
